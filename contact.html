@@ -36,8 +36,15 @@
             class="form_body"
             name="contact"
             method="POST"
+            netlify-honeypot="bot-field"
             data-netlify="true"
+            action="/success/"
           >
+            <p class="d-none">
+              <label>
+                Don't fill this out if you're human: <input name="bot-field" />
+              </label>
+            </p>
             <div class="form_item">
               <!-- <label for="form_name" class="form_label"></label> -->
               <input
@@ -74,12 +81,12 @@
             <input type="submit" value="Send a message" class="form_button" />
           </form>
         </div>
+        <p class="text-end">...or contact me any way you want</p>
+        <p>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-solid fa-envelope"></i>
+        </p>
       </div>
-      <p class="text-end">...or contact me any way you want</p>
-      <p>
-        <i class="fa-brands fa-linkedin"></i>
-        <i class="fa-solid fa-envelope"></i>
-      </p>
     </div>
   </body>
 </html>
