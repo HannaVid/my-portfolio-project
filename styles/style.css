@@ -91,3 +91,44 @@ h2 {
     padding: 10px;
   }
 }
+
+/* For form */
+.form * {
+  outline: none;
+  border: none;
+}
+.form_item {
+  margin-bottom: 30px;
+}
+
+.form_input {
+  border-radius: 5px;
+  height: 40px;
+  padding: 10px;
+  width: 100%;
+  transition: all 0.5s easy 0s;
+}
+.form_input:focus {
+  box-shadow: 0 0 15px var(--nuance-color);
+}
+
+textarea.form_input {
+  min-height: 150px;
+  resize: vertical;
+  padding: 10px;
+}
+
+.form {
+  display: block;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.form_button {
+  /* float: right; */
+  cursor: pointer;
+  background-color: var(--accent-color);
+  padding: 15px;
+  border-radius: 5px;
+  color: var(--primary-font-color);
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@100;400;800&family=Montserrat:wght@100;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ddb2783df6.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Portfolio - Hanna Vidieniova</title>
+  </head>
+  <body>
+    <div class="wrapper_contact_me">
+      <div class="container">
+        <h1>Let's get in touch!</h1>
+        <p>You can drop me a line...</p>
+
+        <div class="form">
+          <form
+            action="#"
+            id="form"
+            class="form_body"
+            name="contact"
+            method="POST"
+            data-netlify="true"
+          >
+            <div class="form_item">
+              <!-- <label for="form_name" class="form_label"></label> -->
+              <input
+                type="text"
+                id="form_name"
+                name="name"
+                class="form_input"
+                placeholder="Enter your name..."
+                autofocus="on"
+              />
+            </div>
+
+            <div class="form_item">
+              <!-- <label for="form_email" class="form_label"></label> -->
+              <input
+                type="email"
+                id="form_email"
+                name="email"
+                class="form_input"
+                placeholder="Enter your email..."
+              />
+            </div>
+
+            <div class="form_item">
+              <!-- <label for="form_message" class="form_label"></label> -->
+              <textarea
+                name="message"
+                id="form_message"
+                class="form_input"
+                placeholder="Your message..."
+              ></textarea>
+            </div>
+
+            <input type="submit" value="Send a message" class="form_button" />
+          </form>
+        </div>
+      </div>
+      <p class="text-end">...or contact me any way you want</p>
+      <p>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-solid fa-envelope"></i>
+      </p>
+    </div>
+  </body>
+</html>
