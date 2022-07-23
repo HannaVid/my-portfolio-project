@@ -21,31 +21,72 @@
       src="https://kit.fontawesome.com/ddb2783df6.js"
       crossorigin="anonymous"
     ></script>
-    <title>Portfolio - Hanna Vidieniova</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+          
+    <title>About Hanna Vidieniova</title>
+    <meta
+      name="description"
+      content="About Hanna Vidieniova is a front-end engineer based in Chernivtsi"
+    />
   </head>
   <body>
-    <div class="wrapper_about_me">
+    <!-- Menu -->
+    <header class="header">
+      <div class="container">
+        <div class="header_body">
+          <a href="/" class="header_logo" title="Homepage">HannaVid</a>
+          <div class="header_burger">
+            <span></span>
+          </div>
+          <nav class="header_menu">
+            <ul class="header_list">
+              <li class="header_link"><a href="/" title="Homepage">Home</a></li>
+              <li class="header_link active"><a href="/about.html" title="About Hanna">About</a></li>
+              <li class="header_link"><a href="/index.html#works" title="Hanna's work">Work</a></li></li>
+              <li class="header_link"><a href="/contact.html" title="Contact Hanna">Contact</a></li></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
       <div class="container">
         <h1>About me</h1>
         <div class="row">
-          <div class="col-lg-7 align-self-center me-auto mx-0 px-4">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quam
-            aperiam consequuntur nam voluptates eum delectus? Quo expedita quia
-            unde voluptate praesentium atque temporibus illum repudiandae
-            perspiciatis exercitationem, totam sit! Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Molestias nihil nulla, aperiam
-            provident iure fugiat ipsa deleniti sed, odit et odio quasi facilis
-            earum? Doloribus minima reprehenderit quasi labore cum. Lorem ipsum,
-            dolor sit amet consectetur adipisicing elit. Atque voluptate modi,
-            molestias quibusdam vitae neque ut commodi at quos, eum cum
-            consequuntur quidem corporis iusto officia velit recusandae aliquam
-            praesentium!
+          <div class="col-lg-8 align-self-center px-4">
+           <p>I'm a Front-End Developer based in Ukraine and economic informatics graduated from Kharkiv National University of Economics. 
+            I have certificates of Front End Development and Responsive Web Development from SheCodes.
+            <br />
+            <br />
+            I'm a fan of building things for the web making every page intuitive and dynamic user experiences. 
+            I enjoy inspiring life in projects, creating, learning, exploring and thinking about how to make my code better, 
+            currently working on improving my skills in HTML, CSS, JavaScript and digging in React from scratch.
+            </p> 
+            <br />
+            <h2>Skills & Tools:</h2>
+            <div class="wrapper_tools_skills">
+                <span><i class="fa-brands fa-html5"></i></span>
+                <span><i class="fa-brands fa-css3-alt"></i></span>
+                <span><i class="fa-brands fa-js-square"></i></span>
+                <span><i class="fa-brands fa-bootstrap"></i></span>
+                <span><i class="fa-brands fa-github"></i></span>
+                <span><i class="devicon-vscode-plain"></i></span>
+              </ul>
+            </div>
           </div>
-          <div class="col-lg-3 gy-5 gy-lg-0">
-            <img src="/images/about_me.jpg" alt="" class="img-fluid" />
+          <div class="col-lg-4 gy-5 gy-lg-0">
+            <img src="/images/about_me.jpg" alt="Hanna's Photo" class="img-fluid photo_hero" />
           </div>
         </div>
       </div>
-    </div>
+      <footer>
+        <div class="wrapper_footer container">
+          <div class="project_links">
+          <a href="https://github.com/HannaVid/my-portfolio-project" class="github" title="See open-sourced code of the Project on Github"><img src="/images/github_icon.svg" alt="Github icon"></a>
+          <a href="https://friendly-twilight-334154.netlify.app" class="netlify" title="Check out the Project on Netlify"><img src="/images/netlify_icon.svg" alt="Netlify icon" ></a>
+        </div>
+        <div>| Designed & Built by Hanna Vidieniova</div>
+        </div>
+      </footer>
+      <script src="/scripts/script.js"></script>
   </body>
 </html>

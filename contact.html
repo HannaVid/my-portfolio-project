@@ -21,71 +21,105 @@
       src="https://kit.fontawesome.com/ddb2783df6.js"
       crossorigin="anonymous"
     ></script>
-    <title>Portfolio - Hanna Vidieniova</title>
+    <title>Let's get in touch with Hanna</title>
+    <meta
+      name="description"
+      content="Let's get in touch with Hanna. You can drop a line or contact any way you want"
+    />
   </head>
   <body>
-    <div class="wrapper_contact_me">
+    <!-- Menu -->
+    <header class="header">
       <div class="container">
-        <h1>Let's get in touch!</h1>
-        <p>You can drop me a line...</p>
-
-        <div class="form">
-          <form
-            id="form"
-            class="form_body"
-            name="contact"
-            method="POST"
-            netlify-honeypot="bot-field"
-            data-netlify="true"
-            action="/success"
-          >
-            <p class="d-none">
-              <label>
-                Don't fill this out if you're human: <input name="bot-field" />
-              </label>
-            </p>
-            <div class="form_item">
-              <!-- <label for="form_name" class="form_label"></label> -->
-              <input
-                type="text"
-                id="form_name"
-                name="name"
-                class="form_input"
-                placeholder="Enter your name..."
-                autofocus="on"
-              />
-            </div>
-
-            <div class="form_item">
-              <!-- <label for="form_email" class="form_label"></label> -->
-              <input
-                type="email"
-                id="form_email"
-                name="email"
-                class="form_input"
-                placeholder="Enter your email..."
-              />
-            </div>
-
-            <div class="form_item">
-              <!-- <label for="form_message" class="form_label"></label> -->
-              <textarea
-                name="message"
-                id="form_message"
-                class="form_input"
-                placeholder="Your message..."
-              ></textarea>
-            </div>
-
-            <input type="submit" value="Send a message" class="form_button" />
-          </form>
+        <div class="header_body">
+          <a href="/" class="header_logo" title="Homepage">HannaVid</a>
+          <div class="header_burger">
+            <span></span>
+          </div>
+          <nav class="header_menu">
+            <ul class="header_list">
+              <li class="header_link"><a href="/" title="Homepage">Home</a></li>
+              <li class="header_link"><a href="/about.html" title="About Hanna">About</a></li>
+              <li class="header_link"><a href="/index.html#works" title="Hanna's work">Work</a></li></li>
+              <li class="header_link active"><a href="/contact.html" title="Contact Hanna">Contact</a></li></li>
+            </ul>
+          </nav>
         </div>
-        <p class="text-end">...or contact me any way you want</p>
-        <p>
-          <i class="fa-brands fa-linkedin"></i>
-          <i class="fa-solid fa-envelope"></i>
-        </p>
       </div>
+    </header>
+
+    <div class="container">
+      <h1>Let's get in touch!</h1>
+      <p>You can drop me a line...</p>
+
+      <div class="form">
+        <form
+          id="form"
+          class="form_body"
+          name="contact"
+          method="POST"
+          netlify-honeypot="bot-field"
+          data-netlify="true"
+          action="/success"
+        >
+          <p class="d-none">
+            <label>
+              Don't fill this out if you're human: <input name="bot-field" />
+            </label>
+          </p>
+          <div class="form_item">
+            <!-- <label for="form_name" class="form_label"></label> -->
+            <input
+              type="text"
+              id="form_name"
+              name="name"
+              class="form_input"
+              placeholder="Enter your name..."
+              autofocus="on"
+            />
+          </div>
+
+          <div class="form_item">
+            <!-- <label for="form_email" class="form_label"></label> -->
+            <input
+              type="email"
+              id="form_email"
+              name="email"
+              class="form_input"
+              placeholder="Enter your email..."
+            />
+          </div>
+
+          <div class="form_item">
+            <!-- <label for="form_message" class="form_label"></label> -->
+            <textarea
+              name="message"
+              id="form_message"
+              class="form_input"
+              placeholder="Your message..."
+            ></textarea>
+          </div>
+
+          <input type="submit" value="Send a message" class="form_button" />
+        </form>
+      </div>
+      
+      
+      <p class="text-end">...or contact me any way you want</p>
+      <div class="contact_links"><a href="mailto:hannaviden@gmail.com" title="Send me an email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/hanna-vidieniova" title="Find me on the LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/HannaVid" title="Find me on the Github"><i class="fa-brands fa-github"></i></a></div>
     </div>
+
+    <footer>
+      <div class="wrapper_footer container">
+        <div class="project_links">
+        <a href="https://github.com/HannaVid/my-portfolio-project" class="github" title="See open-sourced code of the Project on Github"><img src="/images/github_icon.svg" alt="Github icon"></a>
+        <a href="https://friendly-twilight-334154.netlify.app" class="netlify" title="Check out the Project on Netlify"><img src="/images/netlify_icon.svg" alt="Netlify icon" ></a>
+      </div>
+      <div>| Designed & Built by Hanna Vidieniova</div>
+      </div>
+    </footer>
+    <script src="/scripts/script.js"></script>
   </body>
 </html>

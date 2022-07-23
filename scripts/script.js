@@ -1,5 +1,4 @@
 // Menu
-
 let menuBurger = document.querySelector(".header_menu");
 let headerBurger = document.querySelector(".header_burger");
 let body = document.querySelector("body");
@@ -10,8 +9,10 @@ headerBurger.addEventListener(`click`, function () {
   let toggleClassBody = body.classList.toggle("lock");
 });
 
-// Create dotted background
 
+
+
+// Create dotted background
 let windowHeight = window.innerHeight;
 console.log(windowHeight);
 
@@ -26,8 +27,8 @@ function createDottedBackground() {
     let width = canvas.offsetWidth;
     let height = canvas.offsetHeight;
 
-    console.log(width);
-    console.log(height);
+    // console.log(width);
+    // console.log(height);
 
     for (let i = 0; i < width; i += 40) {
       for (let j = 0; j < height; j += 40) {
