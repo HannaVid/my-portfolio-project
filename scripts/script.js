@@ -14,10 +14,10 @@ headerBurger.addEventListener(`click`, function () {
 
 // Create dotted background
 let windowHeight = window.innerHeight;
-console.log(windowHeight);
+// console.log(windowHeight);
 
 let windowWidth = window.innerWidth;
-console.log(windowWidth);
+// console.log(windowWidth);
 
 window.addEventListener("DOMContentLoaded", createDottedBackground);
 
