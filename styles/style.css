@@ -44,6 +44,12 @@ h1 {
   text-align: center;
   text-transform: capitalize;
 }
+
+.works_content {
+  margin-top: -40px;
+  padding-top: 40px;
+}
+
 h2 {
   font-size: 1.5rem;
 }
@@ -52,56 +58,41 @@ p {
   font-size: 1rem;
 }
 
-/*Styling hero's block */
+/* Styling hero's block */
+
 .hero {
   left: 50%;
   position: absolute;
-  top: 40%;
-  transform: translate(-50%);
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
 }
 
-.hero div {
-  font-size: clamp(1.5rem, 3.5vw, 3rem);
-  font-weight: 900;
-}
-
-.hero div:nth-of-type(2) {
-  font-size: clamp(1rem, 2.5vw, 1.5rem);
-  line-height: 2em;
-  font-weight: 600;
-  margin-bottom: 2em;
-}
-
-.button {
-  background-color: var(--accent-color);
+.wrapper_hero {
+  padding: 50px;
+  box-shadow: var(--nuance-box-shadow);
   border: 2px solid var(--nuance-color);
-  font-size: clamp(0.5rem, 2.5vw, 1.5rem);
-  font-weight: 400;
-  margin-top: 30px;
-  padding: 10px;
-  text-align: center;
+  background-color: rgba(30, 5, 33, 0.9);
   transition: all 150ms ease-in-out;
 }
 
-.button:hover {
-  box-shadow: var(--nuance-box-shadow);
+.wrapper_hero:hover {
+  transform: scale(1.1);
+  border: 2px solid var(--accent-color);
+  box-shadow: var(--accent-box-shadow);
 }
 
-.arrow_movement_down {
-  padding-left: 10px;
-  animation: arrowMovementDownn 2s linear infinite;
+.hero div:first-child {
+  font-size: 3.5rem;
+  font-weight: 900;
+  text-align: center;
 }
 
-@keyframes arrowMovementDownn {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(5px);
-  }
-  100% {
-    transform: translateY(0);
-  }
+.hero div:nth-of-type(2) {
+  font-size: 1.5rem;
+  line-height: 2em;
+  font-weight: 600;
+  text-align: center;
 }
 
 /* Styling of work's section */
@@ -281,18 +272,7 @@ textarea.form_input {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1;
-}
-
-.header_bottom {
-  left: 0;
-  z-index: 1;
-  width: 100%;
-  background-color: var(--accent-color);
-  border-top: 2px solid var(--nuance-color);
-  bottom: 0;
-  height: 40px;
-  position: absolute;
+  z-index: 4;
 }
 
 .header_logo {
@@ -437,6 +417,96 @@ body.lock {
   overflow: hidden;
 }
 
+/* Media query for responsive app*/
+@media (max-width: 992px) {
+  p,
+  ul,
+  h2 {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .work_img_left,
+  .work_img_right {
+    display: none;
+  }
+
+  .link_work_left,
+  .link_work_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: color-change 6s infinite;
+    transition: all 150ms ease-in-out;
+  }
+
+  .link_work_left:hover,
+  .link_work_right:hover {
+    transform: scale(1.2);
+  }
+
+  .wrapper_hero {
+    padding: 20px;
+  }
+
+  @keyframes color-change {
+    0% {
+      color: var(--accent-color);
+    }
+
+    50% {
+      color: var(--nuance-color);
+    }
+
+    100% {
+      color: var(--third-color);
+    }
+  }
+
+  a .arrow_movement {
+    display: none;
+  }
+
+  .description_work {
+    margin-top: 4rem;
+  }
+  .description_work li {
+    font-size: 1.5rem;
+  }
+  .wrapper_footer {
+    margin: 1rem 0 1rem;
+  }
+
+  .form_button {
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .wrapper_footer :nth-of-type(2) {
+    font-size: 8px;
+  }
+
+  .photo_hero {
+    max-height: 400px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .wrapper_footer {
+    margin: 55px 0 20px;
+  }
+  footer img {
+    width: 40px;
+    padding: 5px;
+  }
+
+  .header_bottom {
+    display: none;
+  }
+}
+
 /* Dotted background for wrapper hero */
 #canvas {
   animation: changeColor 10s linear infinite;
@@ -490,55 +560,4 @@ body.lock {
   position: relative;
   top: 0%;
   width: 40px;
-}
-
-/* Media query for responsive app*/
-@media (max-width: 767px) {
-  p,
-  ul,
-  h2 {
-    padding: 10px;
-    text-align: center;
-  }
-  .work_img_left,
-  .work_img_right {
-    display: none;
-  }
-  h1 {
-    margin: 70px auto 20px;
-  }
-  .description_work {
-    margin-top: 4rem;
-  }
-  .description_work li {
-    font-size: 1.5rem;
-  }
-  .wrapper_footer {
-    margin: 1rem 0 1rem;
-  }
-
-  .form_button {
-    margin-bottom: 60px;
-    display: flex;
-    justify-content: center;
-  }
-
-  .wrapper_footer :nth-of-type(2) {
-    font-size: 8px;
-  }
-
-  .photo_hero {
-    max-height: 400px;
-    display: block;
-    margin: 0 auto;
-  }
-
-  footer img {
-    width: 40px;
-    padding: 5px;
-  }
-
-  .header_bottom {
-    display: none;
-  }
 }
